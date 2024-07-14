@@ -15,26 +15,22 @@
 		justify-content: center;
 		align-items: center;
 		}
-
-		.arjs-loader div {
-		text-align: center;
-		font-size: 1.25em;
-		color: white;
-		}
     </style>
 	
 	<body style="margin : 0px; overflow: hidden;">
 	
 		<div class="arjs-loader">
-			<div>Loading, please wait...</div>
+			<img src="https://opros.pravovojstatus.ru/wp-content/plugins/Super-Quiz/admin/gifs/loading.gif"
+			alt="Загрузка...">
 		</div>
-	
+		
 		<a-scene vr-mode-ui="enabled: false;"
 		renderer="logarithmicDepthBuffer: true;"
 		embedded arjs='sourceType: webcam; debugUIEnabled: false;'>
 			<a-assets>
 				<audio id="mira" src="./Assets/Audio/mira.mp3" preload="auto"></audio>
 			</a-assets>
+			
 			<a-entity sound="src: #mira; autoplay: true; loop: true">
 			</a-entity>
 			<a-nft
